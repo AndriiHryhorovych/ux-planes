@@ -79,21 +79,25 @@
 <section class="home__about">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
-                <span>Про нас</span>
+            <div class="col-12 col-md-12 col-lg-4">
+                <h2>Про нас</h2>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <p><strong>Найбільша гордість УЛА -</strong> високопрофесійні
                     інженери і співробітники підприємства, що мають багаторічний 
                 досвід роботи на авіаремонтних підприємствах України.</p>
-                <img src="img/image_1.png" alt="airplane">
+                <img src="img/image_1.png" class="w-100" alt="airplane">
             </div>
-            <div class="col-12 col-md-4">
-                <img src="img/image_2.png" alt="airplane">
-                <p>Вони тісно співпрацюють з конструкторами, підприємствами авіабудування, 
-                науково-дослідними центрами і організаціями</p>
-                <p>Повний цикл обслуговування і ремонту здійснюється на сучасній ремонтній базі 
-                з необхідним обладнанням.</p>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="d-flex flex-column">
+                    <img src="img/image_2.png" class="w-100 order-2 order-md-1" alt="airplane">
+                    <div class="order-1 order-md-2">
+                        <p>Вони тісно співпрацюють з конструкторами, підприємствами авіабудування, 
+                        науково-дослідними центрами і організаціями</p>
+                        <p>Повний цикл обслуговування і ремонту здійснюється на сучасній ремонтній базі 
+                        з необхідним обладнанням.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -102,38 +106,58 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="img/left-quote 1.png" alt="airplane">
-                <p><strong>Наша місія -</strong> почати нове життя літаків Антонов, 
-                які вже довели свою ефективність у всьому світі.</p>
-                <a href="#" class="d-flex">
-                    <span>Дізнатись більше </span>
-                    <img src="img/arrow-right.png">
-                </a>
+                <blockquote>
+                    <img src="img/left-quote 1.png" alt="airplane" class="guotes">
+                    <p><strong>Наша місія -</strong> почати нове життя літаків Антонов, 
+                    які вже довели свою ефективність у всьому світі.</p>
+                    <a href="#" class="d-flex">
+                        <span>Дізнатись більше </span>
+                        <img src="img/arrow-right.png">
+                    </a>
+                </blockquote>
             </div>
-            <div class="col-12 col-md-6">
-                <img src="img/image_3.png" alt="airplane">
-            </div>
+
         </div>
+    </div>
+    <div class="plane d-none d-lg-block" style="background-image: url('img/image_3.png')">
     </div>
 </section>
 <section class="home__services">
     <div class="container">
         <div class="rov home__services-title">
             <div class="col-12">
-                <span>ПОСЛУГИ З РЕМОНТУ ТА МОДЕРНІЗАЦІЇ ЛІТАКІВ <strong>ANTONOV</strong></span>
+                <h3>ПОСЛУГИ З РЕМОНТУ ТА МОДЕРНІЗАЦІЇ ЛІТАКІВ <strong>ANTONOV</strong></h3>
             </div>
         </div>
-        <div class="row home__services-description">
+        <div class="row">
             <div class="col-12 col-md-6">
-                <div class="home__services-description-menu">
-                    <nav class="nav nav-pills flex-column flex-sm-row">
-                        <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">АН-26</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">АН-32</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">АН-72</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">АН-74</a>
-                    </nav>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">AH-26</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">AH-32</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">AH-72</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-an74-tab" data-bs-toggle="pill" data-bs-target="#pills-an74" type="button" role="tab" aria-controls="pills-an74" aria-selected="false">AH-74</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                     <ul class="home__services-list">
+                        <li>комплекс робіт по продовженню призначених ресурсів і термінів 
+                        служби типів Ан-26, Ан-32, Ан-72, Ан-74</li>
+                        <li>всі види ТО для зазначених типів ВС "АНТОНОВ"</li>
+                        <li> відновлення літака в умовах експлуатуції</li>
+                        <li>модернізація літака типу Ан-32 з продовженням терміну служби до 40 років і заміна авіоніки 
+                        Модернізація Ан-32</li>
+                    </ul>
                 </div>
-                <ul class="home__services-description-items">
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                 <ul class="home__services-list">
                     <li>комплекс робіт по продовженню призначених ресурсів і термінів 
                     служби типів Ан-26, Ан-32, Ан-72, Ан-74</li>
                     <li>всі види ТО для зазначених типів ВС "АНТОНОВ"</li>
@@ -141,16 +165,39 @@
                     <li>модернізація літака типу Ан-32 з продовженням терміну служби до 40 років і заміна авіоніки 
                     Модернізація Ан-32</li>
                 </ul>
-                <a class="home__services-description-btn btn btn-primary" href="#" role="button">
-                    <span>Повний перелік послуг  </span>
-                    <img src="img/arrow-right.png">
-                </a>                 
             </div>
-            <div class="col-12 col-md-6">
-                <img src="img/an-26.png">
-            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+             <ul class="home__services-list">
+                <li>комплекс робіт по продовженню призначених ресурсів і термінів 
+                служби типів Ан-26, Ан-32, Ан-72, Ан-74</li>
+                <li>всі види ТО для зазначених типів ВС "АНТОНОВ"</li>
+                <li> відновлення літака в умовах експлуатуції</li>
+                <li>модернізація літака типу Ан-32 з продовженням терміну служби до 40 років і заміна авіоніки 
+                Модернізація Ан-32</li>
+            </ul>
         </div>
+        <div class="tab-pane fade" id="pills-an74" role="tabpanel" aria-labelledby="pills-an74-tab">
+         <ul class="home__services-list">
+            <li>комплекс робіт по продовженню призначених ресурсів і термінів 
+            служби типів Ан-26, Ан-32, Ан-72, Ан-74</li>
+            <li>всі види ТО для зазначених типів ВС "АНТОНОВ"</li>
+            <li> відновлення літака в умовах експлуатуції</li>
+            <li>модернізація літака типу Ан-32 з продовженням терміну служби до 40 років і заміна авіоніки 
+            Модернізація Ан-32</li>
+        </ul>
     </div>
+</div>
+
+<a class="btn btn-primary d-flex justify-content-center align-items-center" href="#" role="button">
+    <span>Повний перелік послуг  </span>
+    <img src="img/arrow-right.png">
+</a>                 
+</div>
+<div class="col-12 col-md-6">
+    <img src="img/an-26.png" class="w-100">
+</div>
+</div>
+</div>
 </section>
 <section class="home__partners">
     <div class="container">
@@ -170,7 +217,7 @@
     <!-- чи можна за межами контейнера, щоб рисунок був від початку сторінки? -->
     <!-- як прибирати елементи, якщо в дизайні малого розміру їх нема? -->
     <div class="col-12">
-        <img src="img/image_4.png">
+        <img src="img/image_4.png" class="w-100">
     </div>
 </section>
 <section class="home__footer">
@@ -196,7 +243,7 @@
 </section>
 
 
-
+<script src="js/bootstrap.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
