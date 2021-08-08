@@ -180,4 +180,22 @@
 			background-image: linear-gradient(to top, #2769b1, #09498f);
 		}
 	}
+	&__partners {
+		background: #f8f8f8;
+		padding-top: 24px;
+		h3 {
+			font-size: 32px;
+			font-weight: bold;
+			line-height: 2;
+			letter-spacing: normal;
+			text-align: left;
+			color: #09498f;
+			text-transform: uppercase;
+		}
+		&-logos {
+			padding-bottom: 52px;
+			opacity: 0.5;
+		}
+	}
+
 }
