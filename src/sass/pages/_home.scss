@@ -13,13 +13,37 @@
 		}
 	}
 	&__hero {
+		position:relative;
 		background-image: linear-gradient(to top, #2769b1, #09498f);
 		color: #fff;
+		overflow: hidden;
+		&-image{
+			position: absolute;
+			top:0;
+			bottom:0;
+			right: 0;
+			left:50%;
+			img.clouds {
+				mix-blend-mode: screen;
+			}
+			img.plane{
+				position: absolute;
+				top:50%;
+				left:80px;
+				transform: translateY(-70%) translateX(100%);
+				transition: 2s;
+				&.animated{
+					transform: translateY(-70%) translateX(0);
+					transition: 2s;
+				}
+			}
+		}
 		.container{
 			min-height: 100vh;
 		}
 		&-main {
 			min-height: calc(100vh - 160px);
+			padding-top: 100px;
 			&-line1 {
 				font-size: 42px;
 				font-weight: 300;
@@ -257,6 +281,10 @@
 		&-logos {
 			padding-bottom: 52px;
 			opacity: 0.5;
+
+			img {
+				max-height: 52px;
+			}
 		}
 	}
 	&__footer {
